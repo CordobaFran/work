@@ -3,15 +3,7 @@ const userInfoContainer = document.querySelectorAll(".es616eb4")
 const nickname = document.querySelectorAll(".es616eb6")
 const account = document.querySelectorAll(".es616eb8")
 const links = document.querySelectorAll(".es616eb3")
-
-// userInfoContainer.forEach((el, index) => {
-//     const divNum = document.createElement("div")
-//     divNum.className = "order"
-//     divNum.textContent = index + 1
-//     el.prepend(divNum)
-
-
-// })
+const imgStyle = document.querySelectorAll(".e1e9er4e0")
 
 nickname.forEach((el) => {
     el.innerHTML = `
@@ -39,4 +31,8 @@ links.forEach((el, index) => {
     divNum.className = "order"
     divNum.textContent = index + 1
     el.append(divNum)
+})
+
+imgStyle.forEach((el) => {
+    el.removeAttribute("style")
 })
